@@ -62,7 +62,7 @@ Array.from(boxes).forEach(element => {
         if (boxtext.innerText === '') {
             boxtext.innerText = turn;
             turn = changeturn();
-            // audioturn.play();
+            audioturn.play();
             checkwin();
             if (!isgameover) {
                 document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
